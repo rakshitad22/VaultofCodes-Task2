@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VaultofCodes | Certificate Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="background">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+    </div>
+
+    <!-- Header -->
+
+    <header class="brand-header">
+
+        <div class="logo-box">
+
+            <img src="images/logo.png" alt="VaultofCodes Logo">
+
+            <div>
+
+                <h2>VaultofCodes</h2>
+
+                <p>Certificate Verification Portal</p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <span class="hero-badge">
+
+            Trusted Internship Platform
+
+        </span>
+
+        <h1>
+
+            Verify Internship Credentials
+
+        </h1>
+
+        <p>
+
+            Securely validate internship certificates, student records and training details
+            using your registered Email ID or Student ID.
+
+        </p>
+
+    </section>
+
+    <!-- Verification Card -->
+
+    <section class="verify-section">
+
+        <div class="verify-card">
+
+            <h2>
+
+                Validate Credential
+
+            </h2>
+
+            <p>
+
+                Enter your registered Email or Student ID to continue.
+
+            </p>
+
+            <div class="input-group">
+
+                <i class="fas fa-user-graduate"></i>
+
+                <input
+                    id="identifier"
+                    type="text"
+                    placeholder="Enter Email or Student ID">
+
+            </div>
+
+            <div class="captcha-row">
+
+                <div class="captcha-box">
+
+                    4970P
+
+                </div>
+
+                <button class="refresh-btn">
+
+                    <i class="fas fa-rotate-right"></i>
+
+                </button>
+
+                <input
+                    type="text"
+                    placeholder="Enter Code">
+
+            </div>
+
+            <button class="verify-btn"
+                onclick="verifyStudent()">
+
+                <i class="fas fa-shield-check"></i>
+
+                Verify Record
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Spinner -->
+
+    <div class="spinner hidden"></div>
+
+    <!-- Result -->
+
+    <section id="result">
+
+    </section>
+
+    <!-- Toast -->
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
